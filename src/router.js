@@ -10,13 +10,9 @@ const routes = [
         children: [
             {
                 path: '',
-                redirect: { name: 'main' }
-            },
-            {
-                path: 'main',
                 name: 'main',
                 component: pages.main
-            }
+            },
         ]
     }
 ]
@@ -27,33 +23,6 @@ const router = new VueRouter({
     routes,
     linkExactActiveClass: 'router-link',
     linkActiveClass: 'is-active'
-})
-
-let loader = null
-
-function hideLoader() {
-    if (loader) {
-        loader.hide()
-        loader = null
-    }
-}
-
-function showLoader() {
-    loader = Vue.$loading.show({
-        loader: String(process.env.VUE_APP_LOADER_TYPE),
-        opacity: Number(process.env.VUE_APP_LOADER_OPACITY),
-        color: String(process.env.VUE_APP_LOADER_COLOR),
-        blur: String(process.env.VUE_APP_LOADER_BLUR)
-    })
-    return true
-}
-
-router.beforeEach((to, from, next) => {
-    return next()
-})
-
-router.afterEach(() => {
-    //hideLoader()
 })
 
 Vue.prototype.router = router
