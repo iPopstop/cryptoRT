@@ -1,33 +1,29 @@
 
-@font-face {
-    font-family:'Open Sans';
-    src: url('../fonts/Open Sans Regular.eot');
-    src: url('../fonts/Open Sans Regular.eot?#iefix') format('embedded-opentype'),
-    url('../fonts/Open Sans Regular.woff2') format('woff2'),
-    url('../fonts/Open Sans Regular.woff') format('woff'),
-    url('../fonts/Open Sans Regular.svg#Open Sans Regular') format('svg');
-    font-weight: 400;
-    font-style: normal;
-    font-stretch: normal;
-    unicode-range: U+0020-2212;
-}
-@import "~bootstrap/scss/bootstrap";
-
-$default-font: 'Open Sans', sans-serif;
+@import "node_modules/bootstrap/scss/functions";
+@import "node_modules/bootstrap/scss/variables";
+@import "node_modules/bootstrap/scss/mixins";
+@import "node_modules/bootstrap/scss/utilities";
+@import "node_modules/bootstrap/scss/root";
+@import "node_modules/bootstrap/scss/bootstrap-grid";
+@import "node_modules/bootstrap/scss/bootstrap-reboot";
+@import "node_modules/bootstrap/scss/buttons";
+@import "node_modules/bootstrap/scss/button-group";
+@import "node_modules/bootstrap/scss/type";
+@import "node_modules/bootstrap/scss/utilities";
+@import "node_modules/bootstrap/scss/tables";
 
 body {
     background-color: #f1f1f1 !important;
-    font-family: $default-font;
     color: #7a7a7a;
 }
 
 $white: #282828;
-//$success: #00f2c3;
 $info: #0075db;
 $success: #2ecc40;
 $danger: #ff4136;
 $warning: #f39c12;
 $primary: $info;
+
 .cursor-pointer {
     cursor: pointer;
 }

@@ -124,7 +124,7 @@ export default {
           </template>
           <template v-else>
               <tr>
-                <td colspan="7" class="text-center">Валюты не выбраны. <span class="text-primary cursor-pointer" @click="selected = symbols">Выбрать все</span></td>
+                <td colspan="10" class="text-center">Валюты не выбраны. <span class="text-primary cursor-pointer" @click="selected = symbols">Выбрать все</span></td>
               </tr>
           </template>
         </tbody>
