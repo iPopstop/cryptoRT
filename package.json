@@ -13,7 +13,7 @@
     "axios": "^0.21.1",
     "bootstrap": "^4.6.0",
     "compass-mixins": "^0.12.10",
-    "core-js": "^3.11.0",
+    "core-js": "^3.11.2",
     "eslint-plugin-import": "^2.22.1",
     "feather-icons": "^4.28.0",
     "fecha": "^4.2.1",
