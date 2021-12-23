@@ -56,14 +56,14 @@ export default {
       }
     },
     loadSymbols() {
-      axios.get(this.appURL + "/symbols.json").then(({ data }) => {
+      axios.get("https://raw.githubusercontent.com/iPopstop/cryptoRT/master/main/symbols.json").then(({ data }) => {
         this.symbols = data.symbols
       })
     }
   },
   created() {
     this.loadSymbols()
-    this.connection = new WebSocket("wss://api.exchange.bitcoin.com/api/2/ws")
+    this.connection = new WebSocket("wss://api.hitbtc.com/api/2/ws")
     this.connection.onmessage = (event) => {
       this.loadData(event)
     }
@@ -130,7 +130,6 @@ export default {
         </tbody>
       </table>
     </div>
-    <p>Информация с сайта: <a href="https://exchange.bitcoin.com/" target="_blank" rel="noopener">https://exchange.bitcoin.com/</a></p>
+    <p>Информация с сайта: <a href="https://hitbtc.com/" target="_blank" rel="noopener">https://hitbtc.com/</a></p>
   </div>
 </template>
-<style src="@/assets/styles/pages/main/index.scss" lang="scss"></style>
