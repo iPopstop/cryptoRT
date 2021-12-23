@@ -2,6 +2,8 @@
 
 На 23.12.2021 - API https://exchange.bitcoin.com/ __не работает__, поэтому заменил его на https://hitbtc.com/
 
+Посмотреть - https://crypto.vkod.popstop.space
+
 # Установка
 - Настроить .env файл (`VUE_APP_OUTPUT_DIR`,`VUE_APP_PUBLIC_PROD_PATH`, `VUE_APP_INDEX_PROD_PATH`)
 - Залить все файлы, в качестве root_directory указать `main`
